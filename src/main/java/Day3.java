@@ -8,7 +8,7 @@ import java.util.Objects;
 public class Day3 {
 
     public static void main(String[] args) throws IOException {
-        String filename = "inputd3.txt";
+        String filename = "input/inputd3.txt";
         part1(filename);
         part2(filename);
     }
