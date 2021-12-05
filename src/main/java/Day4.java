@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static java.nio.file.Files.*;
 import static java.util.Arrays.*;
 
 public class Day4 {
@@ -14,7 +15,7 @@ public class Day4 {
     }
 
     public static void part1(String filename) throws IOException {
-        List<String> lines = Files.readAllLines(Paths.get(filename));
+        List<String> lines = readAllLines(Paths.get(filename));
         int[] picked_numbers = extractPickedNumbers(lines.get(0));
         List<Board> boards = extractBoards(lines.subList(1, lines.size()));
 
@@ -35,7 +36,7 @@ public class Day4 {
     }
 
     public static void part2(String filename) throws IOException {
-        List<String> lines = Files.readAllLines(Paths.get(filename));
+        List<String> lines = readAllLines(Paths.get(filename));
         int[] picked_numbers = extractPickedNumbers(lines.get(0));
         List<Board> boards = extractBoards(lines.subList(1, lines.size()));
 
